@@ -1,0 +1,11 @@
+[Unit]
+Description=Alt Listener for Nerd Dictation
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/alt-listener/alt_listener.py
+Restart=always
+User=dotdev
+
+[Install]
+WantedBy=multi-user.target
